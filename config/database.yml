@@ -8,6 +8,8 @@ default: &default
   adapter: sqlite3
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
+  GEOCODING_API_KEY: "AIzaSyCVnYHj8ryRskFLaXs-33FrvMD8WCROe-U&callback=initMap"
+
 
 development:
   <<: *default
